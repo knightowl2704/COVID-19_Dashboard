@@ -49,9 +49,9 @@ class overall extends Component{
                 label: "Statistics",
                 data: [this.state.cases, this.state.deaths, this.state.recovered],
                 backgroundColor: [
-                "rgba(138, 43, 226,0.8)",
-                "rgba(229,57,53 ,0.8)",
-                "rgba(76,175,80,0.8)"
+                "rgba(138, 43, 226,0.9)",
+                "rgba(229,57,53 ,0.9)",
+                "rgba(76,175,80,0.9)"
                 ]
             }
             ]
