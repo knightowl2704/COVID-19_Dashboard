@@ -16,7 +16,7 @@ class App extends Component{
             <body>
                 <nav className='navbar navbar-default'>
                     <div>
-                    <p className='display-2'><b>COVID-</b>
+                    <p className='display-4'><b>COVID-</b>
                      <b className="header_no">19 </b> 
                      Dashboard
                      </p> 
