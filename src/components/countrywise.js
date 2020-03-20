@@ -45,13 +45,17 @@ class countrywise extends Component{
                 <p className='display-4'>Countrywise Statistics</p>
                 <div className='fetched_data_countrywise'>
                     {Object.keys(object).map((value,index)=>{
+                        var url = "https://corona.lmao.ninja/countries/"+String(object[value].country)
+                        var id = "collapseExample"+String(index+1)
+                        var href = '#collapseExample'+String(index+1)
                         return(
-                            <div>
-                                <div className='listOfcountries'>
-                                
-                                <ul>
-                                <li className= 'country'>Country: {object[value].country}</li>
-                                   <ul>
+                            <div className='card' >
+                            <a class="btn btn-primary" data-toggle="collapse" href={href} role="button" aria-expanded="false" aria-controls="collapseExample">
+                            {index+1}: {object[value].country}
+  </a>
+                            <div class="collapse" id={id}>
+                            <div class="card card-body">
+                            <ul>
                                    
                                    <li>Cases: {object[value].cases}</li>  
                                    <li>Deaths: {object[value].deaths}</li>  
@@ -62,10 +66,11 @@ class countrywise extends Component{
                                    <li>Recovered: {object[value].recovered}</li>  
                                    <li>Cases Per One Million: {object[value].casesPerOneMillion}</li>  
                                    
-                                    </ul> 
-                                </ul>  
+                            </ul> 
                             </div>
                             </div>
+                            </div>
+                            
                             
                             
                         )
