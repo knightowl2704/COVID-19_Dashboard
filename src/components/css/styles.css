@@ -1,0 +1,55 @@
+.overall-stats{
+    padding-top:5% ;
+    font: outline;
+    color: rgb(138, 43, 226);
+    text-align:center;    
+}
+
+.countrywise-stats{
+    padding-top: 2%;
+    font: outline;
+    color: rgb(138, 43, 226);
+    text-align:center;    
+}
+
+.header_no{
+    color:blueviolet;
+}
+body{
+    margin: 0.5%;
+    padding: 0%;
+    
+}
+
+.fetched_data{
+    list-style: none;
+    color: black;
+    text-align:center;
+    /* border-radius: 25px; */
+}
+
+.listOfcountries{
+    text-align: center;
+    align-content: center;
+    color: black;
+    padding-right: 4%;
+    /* background:blue; */
+    display: block;
+}
+.country{
+    font-size: 25px;
+    text-align: center;
+    list-style: none;
+    /* color: white; */
+}
+li{
+    list-style: none;
+
+}
+#overall_id{
+    padding: 2% ;
+}
+
+.badge-primary{
+    background-color: blueviolet;
+}
