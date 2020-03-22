@@ -5,10 +5,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import overall from './components/overall';
 import countrywise from './components/countrywise';
+import dropdown from './components/timeseriesdropdown'
 
 const Overall = overall;
 const Countrywise = countrywise;
-
+const Dropdown = dropdown;
 
 class App extends Component{
     render(){
@@ -24,8 +25,13 @@ class App extends Component{
                 </nav>
 
                 <div>
+                    <p className='overall-stats display-4'>Time Series</p>
+                    <Dropdown/>
                     <Overall/>
                     <Countrywise/>
+                    
+
+                    
                 </div>
             </body>
             

@@ -54,3 +54,10 @@ li{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.back_button{
+    text-align: center;
+}
+.country_names.btn{
+    color: rgb(138, 43, 226);
+    font-weight: 400;
+}

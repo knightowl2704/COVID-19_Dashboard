@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './css/styles.css';
 
+import fetchdata from './timeseries'
 
 class countrywise extends Component{
 
@@ -25,7 +26,8 @@ class countrywise extends Component{
 
     }
 
-    
+
+
     componentDidMount(){
         let promisefetchdata = new Promise((resolve,reject)=>{
             this.fetchingData()
@@ -42,14 +44,14 @@ class countrywise extends Component{
 
         return(
             <div className="countrywise-stats">
-                <p className='lead'>Countrywise Statistics</p>
+                <p className='display-4'>Countrywise Statistics</p>
                 <div className='fetched_data_countrywise'>
                     {Object.keys(object).map((value,index)=>{
                         var url = "https://corona.lmao.ninja/countries/"+String(object[value].country)
                         var id = "collapseExample"+String(index+1)
                         var href = '#collapseExample'+String(index+1)
                         return(
-                            <div className='col-6'>
+                            <div className='col'>
                                 <div className='card' >
                             <a class="btn btn-primary" data-toggle="collapse" href={href} role="button" aria-expanded="false" aria-controls="collapseExample">
                             {index+1}: {object[value].country}
