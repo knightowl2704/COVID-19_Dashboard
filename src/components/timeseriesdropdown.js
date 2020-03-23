@@ -76,7 +76,7 @@ class dropdown extends PureComponent {
     render() { 
         // console.log(this.state.countries) 
         if(this.state.countries.length != 0 && this.state.points.dataset.length == 0){
-            console.log(this.state.points.dataset)
+            // console.log(this.state.points.dataset)
             return(
                 <div className='country_names'>
                     {this.state.countries.map(country => 
@@ -85,7 +85,7 @@ class dropdown extends PureComponent {
                 );
         }
         else if(this.state.countries.length != 0 && this.state.points.dataset.length != 0){
-            console.log(this.state.points.dataset)
+            // console.log(this.state.points.dataset)
             return(
                 <div>
                     <div>

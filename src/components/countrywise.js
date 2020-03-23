@@ -20,7 +20,7 @@ class countrywise extends Component{
                 data: data,
                 fetched:true
             }))
-            console.log(this.state.fetched)
+            // console.log(this.state.fetched)
         resolve()
         })
 
@@ -37,7 +37,7 @@ class countrywise extends Component{
     
 
     render(){
-        console.log(this.state.data)   
+        // console.log(this.state.data)   
 
         if (this.state.fetched == true){
             let object = this.state.data    

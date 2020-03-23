@@ -22,7 +22,7 @@ class overall extends Component{
                     cases: data.cases,
                     deaths: data.deaths,
                     recovered: data.recovered
-        })).then(console.log(this.state.deaths))
+        }))
         
         resolve()
     })
@@ -63,7 +63,7 @@ class overall extends Component{
     
 
     render(){
-        console.log(this.state.deaths)  
+        // console.log(this.state.deaths)  
         if(this.state.deaths != 0){
             this.chart()
         }
