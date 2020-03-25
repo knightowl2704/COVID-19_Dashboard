@@ -1,3 +1,8 @@
+// Please Note this file is no more in use //
+// Changed the contents into a Dropdown menu// 
+// Only for reference regarding creating the series function and inmplementing Time series // 
+// Feel free to delete it // 
+
 import React, { PureComponent } from 'react';
 import countrywise from './countrywise';
 // import timeseries from './timeseries';
