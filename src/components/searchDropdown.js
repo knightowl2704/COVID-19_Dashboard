@@ -64,7 +64,7 @@ class sdd extends Component {
     
 
     getCountrydata(){
-        console.log('I am called')
+        // console.log('I am called')
             if(this.state.selectedoption != null && this.state.countrydata.length == 0 ){
                 fetch("https://pomber.github.io/covid19/timeseries.json")
             .then(response => response.json())
@@ -98,7 +98,7 @@ class sdd extends Component {
         //     this.getCountrydata()
 
         // }
-        console.log(this.state)
+        // console.log(this.state)
         if(this.state.fetched && this.state.countrydata.length != 0){
             return(
                 <div>
