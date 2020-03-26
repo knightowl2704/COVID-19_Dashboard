@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Screenshot
+
+Time Series Data
+![Screenshot](https://github.com/knightowl2704/COVID-19_Dashboard/blob/master/covidss.PNG)
+
+
+Overall Statistics
+![Screenshot](https://github.com/knightowl2704/COVID-19_Dashboard/blob/master/covidss1.PNG)
+
+
+Countrywise Statistics
+![Screenshot](https://github.com/knightowl2704/COVID-19_Dashboard/blob/master/covidss2.PNG)
 ## Available Scripts
 
 In the project directory, you can run:
