@@ -43,7 +43,9 @@ class sdd extends Component {
         this.setState({ 
             countrydata: [],
             selectedoption: selectedOption.value,
-        toggle:true });
+        toggle:true },()=>{
+            this.getCountrydata()
+        });
     
 
     }
@@ -82,15 +84,18 @@ class sdd extends Component {
         
     }
 
+    componentDidMount(){
+        this.getData()
+    }
 
 
     render() {
-        this.getData()
-        // console.log('rendercalled')
-        if(this.state.toggle == true){
-            this.getCountrydata()
         
-        }
+        // console.log('rendercalled')
+        // if(this.state.toggle == true){
+        //     this.getCountrydata()
+        
+        // }
         if(this.state.countrydata.length != 0){
             this.series()
         }
